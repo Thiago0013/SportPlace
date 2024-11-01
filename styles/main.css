@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    height: 100%;
+}
+main{
+    height: 100%;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-top: 90px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgb(16, 170, 2) 200%), 
+                url('../images/futebol.webp');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    width: 80%;
+    gap: 10px;
+    padding-left: 990px;
+}
+.produtos::-webkit-scrollbar-track {
+    background: transparent; /* fundo do "trilho" da barra de rolagem */
+}
+.produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20px;
+    transition: transform .5s ease;
+}
+.produto:hover{
+    transform: scale(1.01);
+}
+.produto img{
+    width: 150px;
+}
+.produto3 img{
+    width: 150px;
+    height: 150px;
+}
+.produto p{
+    border-top: 1px solid black;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
