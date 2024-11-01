@@ -18,30 +18,12 @@ main{
                 url('../images/futebol.webp');
     background-size: cover;
     background-position:center;
-    background-repeat: no-repeat;
 }
 .produtos{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-behavior: smooth;
     width: 90%;
-    gap: 10px;
-    padding-left: 60%;
-}
-@media(min-width:800px) and (max-width:1298px) {
-    .produtos{
-        padding-left: 100%;
-        background-color: aqua;
-    }
-}
-@media(min-width:800px) and (max-width:1060px){
-    .produtos{
-        padding-left: 120%;
-        background-color: rgb(255, 0, 0);
-    } 
 }
 .produto{
     display: flex;
@@ -50,14 +32,21 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
     padding: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     cursor: pointer;
     background-color: white;
     border-radius: 20px;
     transition: transform .5s ease;
 }
 .produto:hover{
-    transform: scale(1.01);
+    transform: scale(1.2) translateY(-30px);
+    animation: cor 1s infinite alternate;
+}
+@keyframes cor {
+    0%{
+        color: rgb(9, 255, 0);
+        box-shadow: 0px 0px 5px red;
+    }
 }
 .produto img{
     width: 150px;
