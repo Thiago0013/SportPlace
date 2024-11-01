@@ -20,7 +20,7 @@ main{
     background-position:center;
 }
 .produtos{
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     width: 90%;
