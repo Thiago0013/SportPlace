@@ -25,21 +25,30 @@ main{
     justify-content: center;
     align-items: center;
     overflow-x: auto;
-    overflow-y: hidden;
     white-space: nowrap;
     scroll-behavior: smooth;
-    width: 80%;
+    width: 90%;
     gap: 10px;
-    padding-left: 990px;
+    padding-left: 60%;
 }
-.produtos::-webkit-scrollbar-track {
-    background: transparent; /* fundo do "trilho" da barra de rolagem */
+@media(min-width:800px) and (max-width:1298px) {
+    .produtos{
+        padding-left: 100%;
+        background-color: aqua;
+    }
+}
+@media(min-width:800px) and (max-width:1060px){
+    .produtos{
+        padding-left: 120%;
+        background-color: rgb(255, 0, 0);
+    } 
 }
 .produto{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: 25px;
     margin-bottom: 10px;
     cursor: pointer;
