@@ -42,7 +42,10 @@ header{
     }
 
     .main{
-        background-attachment: fixed;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     }
 
     .produtos{
